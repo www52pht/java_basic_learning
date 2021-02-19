@@ -1,0 +1,3 @@
+# Project exclude paths
+/jdbcTemplate/target/
+/out/
