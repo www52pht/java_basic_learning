@@ -19,14 +19,14 @@ public class Test1 {
 
     JdbcTemplate template = new JdbcTemplate(JDBCUtil.getDataSource());
     /**
-     * 查询name为“王炜维”的记录，并且封装为map集合
+     * 查询name为“张三”的记录，并且封装为map集合
      * 注意：这个合集只能查询到的结果集的长度只能是 1
      */
     @Test
     public void queryForMap() {
 
         String sql = "select * from user where name=?";
-        Map<String, Object> map = template.queryForMap(sql,"王炜维");
+        Map<String, Object> map = template.queryForMap(sql,"张三");
         System.out.println(map);
     }
 
